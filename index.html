@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expense Pocket</title>
+<style>
+:root{--bg:#0F1115;--tile:#1A1E25;--line:#272D37;--fg:#E9EEF5;--mut:#98A3B3;--acc:#4DE1FF;color-scheme:dark}
+@media (prefers-color-scheme:light){:root{--bg:#F2F4F8;--tile:#FFFFFF;--line:#DDE2EA;--fg:#14181F;--mut:#566172;--acc:#0A7F9E;color-scheme:light}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:30px;line-height:1.2;letter-spacing:-0.02em;margin:0 0 8px;text-wrap:balance}
+h2{font-size:20px;margin:32px 0 8px;letter-spacing:-0.01em}
+p,li{color:var(--fg)}
+.mut{color:var(--mut);font-size:14px}
+a{color:var(--acc)}
+.tile{background:var(--tile);border:1px solid var(--line);border-radius:20px;padding:16px 20px;margin:16px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 8px;border-top:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;border-top:0}
+.wrap{overflow-x:auto}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Expense Pocket</a><a href="privacy.html">Privacy policy</a><a href="delete-account.html">Delete your account</a></nav>
+<h1>Expense Pocket</h1>
+<p>A personal money tracker for Android. Every wallet, every currency, nothing converted behind your back.</p>
+<div class="tile"><a href="privacy.html">Privacy policy</a><br><a href="delete-account.html">Delete your account</a></div>
+<p class="mut">By Hovig Taslakian, Lebanon.</p>
+</main>
+</body>
+</html>
