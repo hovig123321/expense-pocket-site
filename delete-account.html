@@ -2,12 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Delete your account</title>
-<meta http-equiv="refresh" content="0; url=https://expense-pocket-594b9.web.app/delete-account">
-<link rel="canonical" href="https://expense-pocket-594b9.web.app/delete-account">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Delete your account – Expense Pocket</title>
+<meta name="description" content="How to delete your Expense Pocket account and data.">
+<style>
+:root{--bg:#ffffff;--tile:#f5f7fa;--border:#dde2ea;--text:#14181f;--muted:#566172;--accent:#08748f}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--tile:#1a1e25;--border:#272d37;--text:#e9eef5;--muted:#98a3b3;--accent:#4de1ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.75rem;line-height:1.25;margin:1rem 0 .25rem}
+h2{font-size:1.2rem;margin:2rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--border)}
+p,li{margin:.5rem 0}
+ul,ol{padding-left:1.25rem}
+a{color:var(--accent)}
+.meta{color:var(--muted);margin:0 0 1rem}
+.note{background:var(--tile);border:1px solid var(--border);border-radius:1rem;padding:.75rem 1rem}
+nav a{display:inline-block;min-height:2.75rem;line-height:2.75rem;margin-right:1rem}
+</style>
 </head>
 <body>
-<p>This page has moved to <a href="https://expense-pocket-594b9.web.app/delete-account">https://expense-pocket-594b9.web.app/delete-account</a>.</p>
+<main>
+<nav><a href="./">Home</a><a href="privacy">Privacy Policy</a><a href="terms">Terms of use</a></nav>
+<h1>Delete your Expense Pocket account</h1>
+<p class="meta">Expense Pocket · Last updated: 2 November 2026</p>
+
+<p>You can delete your account and all the data in it, inside the app or by email. Deleting is permanent and cannot be undone.</p>
+
+<h2>Delete it in the app (fastest)</h2>
+<ol>
+<li>Open Expense Pocket and make sure your phone is online.</li>
+<li>Go to <em>More → Settings → Account</em>.</li>
+<li>Tap <em>Delete account</em>.</li>
+<li>Read the message and confirm. If you signed in with an email and password, enter your password; if you signed in with Google, confirm with Google. A guest account needs no password.</li>
+</ol>
+<p>The deletion starts at once. This works for guest accounts too.</p>
+
+<h2>Ask us to delete it by email</h2>
+<p>If you can no longer use the app, write to <strong>expensepocket.support@gmail.com</strong> from the email address of your account, with the subject “Delete my Expense Pocket account”. We may ask you to confirm that the address is yours. We will delete the account and its data within 30 days and reply when it is done.</p>
+<p class="note">A guest account has no email address, so we cannot tell which guest account is yours. Delete a guest account in the app; it cannot be requested by email. A guest that bought Premium has a RevenueCat record under a random ID that we cannot link to a person, so we cannot ask RevenueCat to delete it by email.</p>
+
+<h2>What is deleted</h2>
+<ul>
+<li>Your wallets, transactions, categories, budgets, bills, savings goals and their contributions.</li>
+<li>Your profile (display name, email address, primary currency and settings).</li>
+<li>Your sign-in account (Firebase Authentication).</li>
+<li>Deleting the account signs you out. A working copy of your data may still be in the app’s storage on your phone; clear the app’s storage or uninstall the app to remove it.</li>
+</ul>
+
+<h2>What may remain</h2>
+<ul>
+<li>Crash reports sent earlier are not linked to your account. Firebase keeps them for a limited time (about 90 days) and then removes them.</li>
+<li>Copies in Google’s own system backups are removed on Google’s schedule.</li>
+<li><strong>Purchases.</strong> Deleting the account does not cancel a subscription: cancel it in Google Play (Payments and subscriptions) first. <strong>RevenueCat keeps the purchase and subscription record after the account is deleted.</strong> That record has your app user ID (your account ID), the Google Play purchase record (plan, purchase token, dates, price and currency, and renewal, cancellation or refund status) and technical details such as the app version, phone model, Android version, language, country and IP address. It does not have your email address, your name or any of your wallets, transactions or other money data. We ask RevenueCat to delete it on request: write to <strong>expensepocket.support@gmail.com</strong> from the email address of your account with the subject “Delete my RevenueCat record”, and we will ask RevenueCat to delete the record linked to your account. Google Play keeps its own purchase records under Google’s policy; we cannot delete those.</li>
+<li><strong>Ads (free plan).</strong> Ad data (advertising ID, IP address, device and ad-interaction data) is held by Google AdMob and its partners, not in your account, so deleting the account does not remove it. Reset or delete the advertising ID in Android settings (<em>Settings → Privacy → Ads</em>) to cut the link; see the <a href="privacy">Privacy Policy</a>, “Ads and your choices”.</li>
+<li><strong>Plan details.</strong> The small record of when your Premium ends and which wallets, budgets, bills and goals you chose to keep or that are locked on the free plan is not removed by deleting in the app yet. To have it removed, write to <strong>expensepocket.support@gmail.com</strong> from the email address of your account.</li>
+<li>Files you exported (CSV or PDF) and shared with other apps are outside the app. Delete them in those apps.</li>
+</ul>
+
+<h2>How long it takes</h2>
+<p>Deleting in the app takes effect within moments, once your phone is online. Requests by email are done within 30 days, including asking RevenueCat to delete its record. How long RevenueCat, Google Play and Google AdMob keep data after that follows their own policies (RevenueCat keeps the record as long as needed to run the subscription and for legal and accounting reasons). Crash reports are removed by Firebase after about 90 days.</p>
+
+<p>More about the data we hold: <a href="privacy">Privacy Policy</a>.</p>
+</main>
 </body>
 </html>

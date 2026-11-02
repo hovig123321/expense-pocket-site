@@ -2,12 +2,158 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy policy</title>
-<meta http-equiv="refresh" content="0; url=https://expense-pocket-594b9.web.app/privacy">
-<link rel="canonical" href="https://expense-pocket-594b9.web.app/privacy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy – Expense Pocket</title>
+<meta name="description" content="How the Expense Pocket app handles your data.">
+<style>
+:root{--bg:#ffffff;--tile:#f5f7fa;--border:#dde2ea;--text:#14181f;--muted:#566172;--accent:#08748f}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--tile:#1a1e25;--border:#272d37;--text:#e9eef5;--muted:#98a3b3;--accent:#4de1ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.75rem;line-height:1.25;margin:1rem 0 .25rem}
+h2{font-size:1.2rem;margin:2rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--border)}
+p,li{margin:.5rem 0}
+ul{padding-left:1.25rem}
+a{color:var(--accent)}
+.meta{color:var(--muted);margin:0 0 1rem}
+.note{background:var(--tile);border:1px solid var(--border);border-radius:1rem;padding:.75rem 1rem}
+nav a{display:inline-block;min-height:2.75rem;line-height:2.75rem;margin-right:1rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0}
+th,td{border:1px solid var(--border);padding:.5rem;text-align:left;vertical-align:top}
+th{background:var(--tile)}
+.wrap{overflow-x:auto}
+</style>
 </head>
 <body>
-<p>This page has moved to <a href="https://expense-pocket-594b9.web.app/privacy">https://expense-pocket-594b9.web.app/privacy</a>.</p>
+<main>
+<nav><a href="./">Home</a><a href="terms">Terms of use</a><a href="delete-account">Delete your account</a></nav>
+<h1>Privacy Policy</h1>
+<p class="meta">Expense Pocket · Last updated: 2 November 2026</p>
+
+<p>This page explains what data the Expense Pocket app on Android collects, why, where it is kept, who can see it, and how you can delete it. It describes what the app does today.</p>
+
+<h2>1. Who we are</h2>
+<p>Expense Pocket is a personal finance app (expense tracking, income, budgets, bills and savings goals) published by Hovig Taslakian, an individual developer. In this policy, “we” and “us” mean the publisher of the app. You can reach us at the address in the “Contact” section.</p>
+
+<h2>2. What we collect</h2>
+<p><strong>Your account.</strong> When you first open the app we create a guest account, which has a random user ID and no email address. If you create an account, you sign in with an email address and password, or with Google. We then hold your email address. With Google sign-in, Google also gives Firebase your display name and profile information; our app copies your display name and email address into your profile record.</p>
+<p><strong>The money data you enter.</strong> Everything you type into the app is stored in your account:</p>
+<ul>
+<li>wallets: name, currency and balance;</li>
+<li>transactions: amount, currency, type (expense or income), date, category, note, wallet, and links to a bill or goal;</li>
+<li>categories you create or change;</li>
+<li>budgets, bills (name, amount, due date, repeat and reminder settings), and savings goals with their contributions;</li>
+<li>plan details: when your Premium is ending, which wallets, budgets, bills and goals you chose to keep on the free plan, and which are locked;</li>
+<li>your primary currency, whether you finished the welcome steps, your own allowed exchange-rate ranges, if you set any, and the rate each bill used, kept for display.</li>
+</ul>
+<p>The daily exchange-rate table the app downloads is stored on your phone only.</p>
+<p><strong>Exports.</strong> You can export your transactions as a CSV or PDF file. Premium and Lifetime can export freely; on the free plan you watch a video to export one file. The file is made on your phone and goes only to the app you choose in Android’s share sheet.</p>
+<p>The app never converts or adds amounts across currencies. It uses exchange rates only to check change on bills paid in two currencies. It does not connect to your bank, and does not read your SMS messages, call log, contacts, location, camera or microphone.</p>
+<p><strong>Crash reports.</strong> In the released app, after you have confirmed your age, Firebase Crashlytics receives a report when the app crashes or hits an unexpected error. A report has the type of the error, a short error code or description written by the app (for example “Background write failed: save transaction”), a few log lines the app writes (for example why an ad was skipped), and, for a failed Google sign-in, the step it stopped at, and the stack trace (code locations only). The app does not put your amounts, notes, names, email address or other personal or financial data into these descriptions and log lines. A crash inside Android or the Flutter framework is reported with that system’s own description of the error. Crashlytics also records, by itself, the phone model, Android version, app version, the time of the crash and an installation identifier. Reports are not sent before the age check is passed, and not from test builds.</p>
+<p><strong>Purchases.</strong> The optional Premium plans (a monthly or yearly subscription, or a one-time Lifetime purchase) are sold through Google Play, which takes the payment. The yearly plan has a 7-day free trial for new customers. Google Play handles your payment method; we never see or store your card or bank details. To tell the app whether Premium is on, we use RevenueCat, a purchase service. RevenueCat receives: an app user ID (your account ID, or a random ID made by RevenueCat for a guest account); the purchase record from Google Play (which plan you bought, the purchase token, the purchase, trial and end dates, the price and currency, and whether it renews (a Lifetime purchase never does), was cancelled or refunded); and technical details such as the app version, phone model, Android version, language, country and your IP address. RevenueCat stores this to keep your purchase history and purchase status, and sends the status back to the app. We do not send RevenueCat your email address, your name, or any of your wallets, transactions or other money data. The app does not start RevenueCat, and no app user ID is made, until you have confirmed your age; until then the free plan applies. The app keeps the last answer on your phone so Premium also works offline. You can use the app without ever buying anything.</p>
+<p><strong>Ads (free plan only).</strong> The free plan shows ads from Google AdMob: a small banner at the bottom of some screens; a full-screen ad each time the app starts and each time you come back to it after being away for 30 minutes or more (not the first time you open the app after installing it); and optional videos you can watch to unlock a feature: Trends and Insights for two hours, a custom accent colour for 24 hours, or one export file (a CSV or PDF). To show and measure these ads, the Google AdMob software inside the app collects, and sends to Google and its ad partners:</p>
+<ul>
+<li>the advertising ID of your phone (a resettable ID that you can delete in Android settings);</li>
+<li>your IP address;</li>
+<li>device and app information, such as the phone model, the Android version and the app’s name and version;</li>
+<li>ad interaction and performance data: which ads were requested, shown, tapped or watched to the end, and whether they loaded.</li>
+</ul>
+<p>We do not send AdMob your wallets, amounts, notes, categories, names or email address. Ads are chosen by Google AdMob and its partners from the data above, under Google’s own policies.</p>
+<p><strong>Your ad choice, kept on your phone.</strong> Where the law asks for it (for example in the European Economic Area, the United Kingdom and some US states), Google shows its own consent form before any ad is requested, and nothing is requested if you do not agree. Your answer is kept on your phone by Google’s consent software. In Settings, <em>Privacy options</em> appears when your region needs it and lets you change that choice.</p>
+<p><strong>Ad unlock time, kept on your phone.</strong> When you watch a video to unlock Trends and Insights, a custom colour or an export, the app saves, on your phone only, when each unlock started and when it ends, how many you have earned today, and the latest time it has seen on your phone’s clock (so that setting the clock back does not give more time).</p>
+<p>Premium and Lifetime never show ads and never start the ad system. The banner never appears on forms (such as adding or editing a transaction), in Settings, in the welcome steps, when you sign in, or on the Premium screens. The full-screen ad can appear on any screen when the app starts or when you come back to it. Ads start only after you have confirmed your age and, where required, answered the consent form.</p>
+<p><strong>Your age.</strong> The app asks for a month and year of birth once. The birth date is never stored or sent. The app keeps only a yes and the time you answered, on your phone.</p>
+
+<h2>3. Why we use it</h2>
+<ul>
+<li>To run the app: show your wallets, transactions, budgets, bills and goals, and keep them in sync if you use your account on another phone.</li>
+<li>To sign you in and keep your account secure.</li>
+<li>To send you the password-reset email you ask for.</li>
+<li>To find and fix crashes.</li>
+<li>To show ads on the free plan and to measure how they perform (Google AdMob and its partners do this), and to let you unlock Trends and Insights, a custom colour or an export by watching a video.</li>
+<li>To make the free-plan limits work when Premium ends (which wallets, budgets, bills and goals stay active).</li>
+<li>To export your data to a file when you ask.</li>
+<li>To remember your ad choice, so you are not asked again and ads are only requested when you agreed.</li>
+<li>To sell Premium (subscription or Lifetime), show whether it is on, and let you restore it on another phone.</li>
+<li>To check that the change on a mixed-currency bill adds up, using today's exchange rates.</li>
+<li>To check the app is genuine and to update app settings and versions.</li>
+</ul>
+<p>Ads are chosen and measured by Google AdMob and its partners from the advertising ID, IP address and device and ad-interaction data described above. The money data you enter is not sent to them. We do not sell your data.</p>
+
+<h2>4. Where it is stored</h2>
+<div class="wrap"><table>
+<tr><th>Data</th><th>Where</th></tr>
+<tr><td>Account (user ID, email, sign-in method)</td><td>Firebase Authentication (Google)</td></tr>
+<tr><td>Wallets, transactions, categories, budgets, bills, goals, profile, and plan details (when Premium is ending, which items you chose to keep, which are locked)</td><td>Cloud Firestore (Google), in your account. Security rules let you read and change only your own data.</td></tr>
+<tr><td>Crash reports</td><td>Firebase Crashlytics (Google)</td></tr>
+<tr><td>Ads, free plan only: advertising ID, IP address, device and app information, ad interaction and performance</td><td>Collected by the Google AdMob software in the app and held by Google and its ad partners, after the consent step where one is required</td></tr>
+<tr><td>Your ad consent choice</td><td>On your phone only, kept by Google’s consent software</td></tr>
+<tr><td>Rewarded unlocks (Trends and Insights, custom colour, export): when each started and ends, how many you earned today, and the latest clock time seen</td><td>On your phone only</td></tr>
+<tr><td>When the app was last used</td><td>On your phone only</td></tr>
+<tr><td>Purchases (subscriptions and the Lifetime purchase): app user ID, purchase and plan status</td><td>Google Play (payments) and RevenueCat (app user ID, purchase record and plan status, and the technical details listed in section 2). A copy of the last answer is kept on your phone.</td></tr>
+<tr><td>Your custom accent colour</td><td>On your phone only</td></tr>
+<tr><td>Today's exchange-rate table (rates per US dollar, their date and source)</td><td>On your phone only. Downloaded at most once a day; a copy bundled in the app is used until the first download.</td></tr>
+<tr><td>Your own allowed exchange-rate ranges, if you set any</td><td>In your account (Cloud Firestore)</td></tr>
+<tr><td>The exchange rate each bill used, kept for display</td><td>With the bill, in your account (Cloud Firestore)</td></tr>
+<tr><td>App settings we publish: the lowest app version allowed to run, and corrections to exchange rates</td><td>Firebase Remote Config (Google); the app fetches them and keeps the last ones on your phone</td></tr>
+<tr><td>App Check: a short-lived token that shows a request comes from the genuine app on a genuine Android device</td><td>Made on your phone by Google Play Integrity and Firebase App Check, attached to the app's requests to Firebase and checked by Google. It is only monitored: no request is blocked.</td></tr>
+<tr><td>A working copy of your data</td><td>On your phone, in Firestore’s offline storage, so the app works without internet</td></tr>
+<tr><td>Settings: theme, reminder switches and times, budget alerts on or off, whether you dismissed a prompt, the age yes and its time</td><td>On your phone only</td></tr>
+<tr><td>App lock: whether it is on and its delay</td><td>On your phone only, in Android’s secure storage. The app never sees or stores your PIN, pattern or fingerprint; it asks Android to check them.</td></tr>
+<tr><td>Reminders (bills, daily log)</td><td>Scheduled on your phone as notifications. They are not sent from a server.</td></tr>
+<tr><td>CSV or PDF files you export</td><td>Made on your phone in temporary storage when you ask, and handed to the app you choose in Android’s share sheet. The next export replaces them.</td></tr>
+</table></div>
+<p>Firebase is run by Google and stores data on Google’s servers, which may be in other countries than yours. Data travels between the app and Firebase over encrypted connections.</p>
+
+<h2>5. Who we share it with</h2>
+<p>We share data with these parties, and no others:</p>
+<ul>
+<li><strong>Google</strong>: Firebase Authentication, Cloud Firestore and Firebase Crashlytics (your account, your data and crash reports), Google sign-in if you choose it, and Google Play, which sells and bills Premium. Also Firebase App Check with Google Play Integrity, which receives the app’s package name, version and signing certificate, its Google Play licence status and device attestation information, to check that the app is genuine and runs on a genuine Android device; Firebase Remote Config, which receives a Firebase installation ID and basic device details (country, language, time zone and Android version), to send the app its settings; and Google Play in-app updates, which receives device details, the app version and its installed parts, to tell whether an update is available.</li>
+<li><strong>Google AdMob and its ad partners</strong>, on the free plan: the ad software in the app sends the advertising ID, IP address, and device, app and ad-interaction data described in section 2 to Google, and Google shares it with the advertisers and ad networks that take part in showing and measuring ads. Google’s own policies apply to what they do with it (see “Ads and your choices”).</li>
+<li><strong>RevenueCat</strong>, which processes your app user ID, purchase record and plan status, and the technical details listed in section 2 for us. The app contacts it only after you have confirmed your age.</li>
+<li><strong>Exchange-rate sources</strong>: To show today's exchange rates, the app downloads a public rate table from ExchangeRate-API (exchangerate-api.com) and, if it is unavailable, a public mirror of fawazahmed0's currency data, at most once a day; no information about you or your account is sent, though, as with any internet request, their server can see your device's IP address.</li>
+</ul>
+<p>These parties process the data to run their services; their own privacy policies apply to their handling of it. We do not sell your data and we do not give your wallets, transactions or other money data to advertisers or data brokers. When you export a file and share it, it goes to the app you pick; that is your choice.</p>
+
+<h2>6. Ads and your choices</h2>
+<ul>
+<li><strong>Consent form.</strong> Where the law requires it, Google shows a consent form before any ad is requested. If you do not agree, no ad is requested. You can change your answer any time in <em>More → Settings → Privacy options</em>, which appears when your region needs it.</li>
+<li><strong>Reset or delete the advertising ID.</strong> In Android settings, open <em>Settings → Privacy → Ads</em> (on some phones <em>Settings → Google → Ads</em>). There you can delete the advertising ID (on older Android versions, reset it, which gives apps a new one). After a delete, apps get no advertising ID.</li>
+<li><strong>Opt out of personalized ads.</strong> In the same Android Ads settings you can turn off ad personalization. You can also manage the ads Google shows you at <a href="https://myadcenter.google.com/">myadcenter.google.com</a>. If your region shows the consent form, you can also choose your ad options there.</li>
+<li><strong>Remove ads.</strong> Premium and Lifetime remove all ads and the ad system is never started. <em>More → Settings → Remove ads</em> opens the Premium screen.</li>
+<li><strong>More about how Google uses ad data:</strong> <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+</ul>
+
+<h2>7. How long we keep it</h2>
+<ul>
+<li>Your account data stays until you delete your account. There is no automatic clean-up: if you uninstall the app without deleting your account, the data stays on our servers until you delete it or ask us to.</li>
+<li>Deleting your account in the app removes it at once (see “Deleting your data”).</li>
+<li>Crash reports are kept by Firebase for a limited time (about 90 days, according to Firebase’s documentation).</li>
+<li>Ad data held by Google AdMob and its partners is kept under Google’s own policies; we do not control how long. Resetting or deleting the advertising ID (see “Ads and your choices”) cuts the link to your earlier ad data.</li>
+<li>The purchase record and subscription status held by RevenueCat are kept under RevenueCat’s policy, as long as needed to run your Premium plan and for legal and accounting reasons. Deleting your account in the app does not remove RevenueCat’s record or Google Play’s purchase records; write to us and we will ask RevenueCat to delete the record linked to your account.</li>
+<li>Data on your phone is removed when you clear the app’s storage or uninstall the app.</li>
+</ul>
+
+<h2>8. Your rights</h2>
+<p>Depending on where you live, you may have the right to see, correct, export and delete your data, to object to how it is used, and to complain to your data-protection authority. In the app you can see and change everything you entered, export your transactions as a CSV or PDF file, and delete your account. For anything else, write to us and we will answer.</p>
+
+<h2>9. Deleting your data</h2>
+<p>In the app: <em>More → Settings → Account → Delete account</em>. You confirm with your password (or Google), and the app then permanently deletes your wallets, transactions, categories, budgets, bills, goals and profile, and then your sign-in account. This needs an internet connection so that nothing is left behind. Copies in Google’s own backups are removed on Google’s schedule.</p>
+<p>By email: see <a href="delete-account">how to delete your account</a>.</p>
+
+<h2>10. Security</h2>
+<p>Connections to Firebase are encrypted. Firestore security rules restrict each account to its own data. You can turn on app lock in Settings to protect the app with your phone’s screen lock or biometrics. No system is completely secure, so please use a strong password and keep your phone’s lock on.</p>
+
+<h2>11. Children</h2>
+<p>Expense Pocket is not for children under 13. The app asks for a month and year of birth and does not let anyone under 13 continue. Ads are never shown to anyone who has not passed the age check: the ad software is not started, and no ad is requested, until you have confirmed your age. We do not knowingly collect data from children under 13. If you believe a child has an account, write to us and we will delete it.</p>
+
+<h2>12. Changes</h2>
+<p>If we change how the app handles data, for example by adding another service that collects data, we will update this page and its “Last updated” date, and for important changes we will do so before the change reaches the app.</p>
+
+<h2>13. Contact</h2>
+<p>Questions, requests or complaints about privacy: <strong>expensepocket.support@gmail.com</strong></p>
+</main>
 </body>
 </html>
