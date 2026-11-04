@@ -30,7 +30,7 @@ th{background:var(--tile)}
 <main>
 <nav><a href="./">Home</a><a href="terms">Terms of use</a><a href="delete-account">Delete your account</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Expense Pocket · Last updated: 2 November 2026</p>
+<p class="meta">Expense Pocket · Last updated: 4 November 2026</p>
 
 <p>This page explains what data the Expense Pocket app on Android collects, why, where it is kept, who can see it, and how you can delete it. It describes what the app does today.</p>
 
@@ -46,6 +46,7 @@ th{background:var(--tile)}
 <li>categories you create or change;</li>
 <li>budgets, bills (name, amount, due date, repeat and reminder settings), and savings goals with their contributions;</li>
 <li>plan details: when your Premium is ending, which wallets, budgets, bills and goals you chose to keep on the free plan, and which are locked;</li>
+<li>recurring incomes you set up: the wallet, amount, category, note, how often, the next date, and whether you want a reminder;</li>
 <li>your primary currency, whether you finished the welcome steps, your own allowed exchange-rate ranges, if you set any, and the rate each bill used, kept for display.</li>
 </ul>
 <p>The daily exchange-rate table the app downloads is stored on your phone only.</p>
@@ -86,7 +87,7 @@ th{background:var(--tile)}
 <div class="wrap"><table>
 <tr><th>Data</th><th>Where</th></tr>
 <tr><td>Account (user ID, email, sign-in method)</td><td>Firebase Authentication (Google)</td></tr>
-<tr><td>Wallets, transactions, categories, budgets, bills, goals, profile, and plan details (when Premium is ending, which items you chose to keep, which are locked)</td><td>Cloud Firestore (Google), in your account. Security rules let you read and change only your own data.</td></tr>
+<tr><td>Wallets, transactions, categories, budgets, bills, goals, profile, and plan details (when Premium is ending, which items you chose to keep, which are locked) and recurring incomes</td><td>Cloud Firestore (Google), in your account. Security rules let you read and change only your own data.</td></tr>
 <tr><td>Crash reports</td><td>Firebase Crashlytics (Google)</td></tr>
 <tr><td>Ads, free plan only: advertising ID, IP address, device and app information, ad interaction and performance</td><td>Collected by the Google AdMob software in the app and held by Google and its ad partners, after the consent step where one is required</td></tr>
 <tr><td>Your ad consent choice</td><td>On your phone only, kept by Google’s consent software</td></tr>
@@ -102,7 +103,7 @@ th{background:var(--tile)}
 <tr><td>A working copy of your data</td><td>On your phone, in Firestore’s offline storage, so the app works without internet</td></tr>
 <tr><td>Settings: theme, reminder switches and times, budget alerts on or off, whether you dismissed a prompt, the age yes and its time</td><td>On your phone only</td></tr>
 <tr><td>App lock: whether it is on and its delay</td><td>On your phone only, in Android’s secure storage. The app never sees or stores your PIN, pattern or fingerprint; it asks Android to check them.</td></tr>
-<tr><td>Reminders (bills, daily log)</td><td>Scheduled on your phone as notifications. They are not sent from a server.</td></tr>
+<tr><td>Reminders (bills, recurring incomes, daily log)</td><td>Scheduled on your phone as notifications. They are not sent from a server.</td></tr>
 <tr><td>CSV or PDF files you export</td><td>Made on your phone in temporary storage when you ask, and handed to the app you choose in Android’s share sheet. The next export replaces them.</td></tr>
 </table></div>
 <p>Firebase is run by Google and stores data on Google’s servers, which may be in other countries than yours. Data travels between the app and Firebase over encrypted connections.</p>
@@ -140,7 +141,7 @@ th{background:var(--tile)}
 <p>Depending on where you live, you may have the right to see, correct, export and delete your data, to object to how it is used, and to complain to your data-protection authority. In the app you can see and change everything you entered, export your transactions as a CSV or PDF file, and delete your account. For anything else, write to us and we will answer.</p>
 
 <h2>9. Deleting your data</h2>
-<p>In the app: <em>More → Settings → Account → Delete account</em>. You confirm with your password (or Google), and the app then permanently deletes your wallets, transactions, categories, budgets, bills, goals and profile, and then your sign-in account. This needs an internet connection so that nothing is left behind. Copies in Google’s own backups are removed on Google’s schedule.</p>
+<p>In the app: <em>More → Settings → Account → Delete account</em>. You confirm with your password (or Google), and the app then permanently deletes your wallets, transactions, categories, budgets, bills, goals, recurring incomes, plan details and profile, and then your sign-in account. This needs an internet connection so that nothing is left behind. Copies in Google’s own backups are removed on Google’s schedule. Older versions of the app may leave a small plan record behind when you delete the account; to ask us about it, write to the address in the “Contact” section.</p>
 <p>By email: see <a href="delete-account">how to delete your account</a>.</p>
 
 <h2>10. Security</h2>
