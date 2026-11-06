@@ -50,6 +50,7 @@ th{background:var(--tile)}
 <li>your primary currency, whether you finished the welcome steps, your own allowed exchange-rate ranges, if you set any, and the rate each bill used, kept for display.</li>
 </ul>
 <p>The daily exchange-rate table the app downloads is stored on your phone only.</p>
+<p><strong>Feedback you send.</strong> If you use <em>More → Send feedback</em>, we receive your message (10 to 1000 characters), the category you pick (bug, idea, question or other, if you pick one), the app version and build, “android”, the time, and your account ID. We receive your account email address only if you tick “You may email me at my account email”; that box is off by default. We receive nothing else with it: no phone model, wallets or transactions. Do not put passwords or card numbers in a message. The form allows 5 messages a day and at least 10 minutes between sends.</p>
 <p><strong>Exports.</strong> You can export your transactions as a CSV or PDF file. Premium and Lifetime can export freely; on the free plan you watch a video to export one file. The file is made on your phone and goes only to the app you choose in Android’s share sheet.</p>
 <p>The app never converts or adds amounts across currencies. It uses exchange rates only to check change on bills paid in two currencies. It does not connect to your bank, and does not read your SMS messages, call log, contacts, location, camera or microphone.</p>
 <p><strong>Crash reports.</strong> In the released app, after you have confirmed your age, Firebase Crashlytics receives a report when the app crashes or hits an unexpected error. A report has the type of the error, a short error code or description written by the app (for example “Background write failed: save transaction”), a few log lines the app writes (for example why an ad was skipped), and, for a failed Google sign-in, the step it stopped at, and the stack trace (code locations only). The app does not put your amounts, notes, names, email address or other personal or financial data into these descriptions and log lines. A crash inside Android or the Flutter framework is reported with that system’s own description of the error. Crashlytics also records, by itself, the phone model, Android version, app version, the time of the crash and an installation identifier. Reports are not sent before the age check is passed, and not from test builds.</p>
@@ -80,6 +81,7 @@ th{background:var(--tile)}
 <li>To sell Premium (subscription or Lifetime), show whether it is on, and let you restore it on another phone.</li>
 <li>To check that the change on a mixed-currency bill adds up, using today's exchange rates.</li>
 <li>To check the app is genuine and to update app settings and versions.</li>
+<li>To read your feedback, fix problems and improve the app, and, only if you ticked the box, to reply to you by email.</li>
 </ul>
 <p>Ads are chosen and measured by Google AdMob and its partners from the advertising ID, IP address and device and ad-interaction data described above. The money data you enter is not sent to them. We do not sell your data.</p>
 
@@ -87,6 +89,7 @@ th{background:var(--tile)}
 <div class="wrap"><table>
 <tr><th>Data</th><th>Where</th></tr>
 <tr><td>Account (user ID, email, sign-in method)</td><td>Firebase Authentication (Google)</td></tr>
+<tr><td>Feedback you send (message, category, app version, time, account ID, and your email only if you ticked the box)</td><td>Cloud Firestore (Google). Only the developer can read it, in the admin dashboard.</td></tr>
 <tr><td>Wallets, transactions, categories, budgets, bills, goals, profile, and plan details (when Premium is ending, which items you chose to keep, which are locked) and recurring incomes</td><td>Cloud Firestore (Google), in your account. Security rules let you read and change only your own data.</td></tr>
 <tr><td>Crash reports</td><td>Firebase Crashlytics (Google)</td></tr>
 <tr><td>Ads, free plan only: advertising ID, IP address, device and app information, ad interaction and performance</td><td>Collected by the Google AdMob software in the app and held by Google and its ad partners, after the consent step where one is required</td></tr>
@@ -134,6 +137,7 @@ th{background:var(--tile)}
 <li>Crash reports are kept by Firebase for a limited time (about 90 days, according to Firebase’s documentation).</li>
 <li>Ad data held by Google AdMob and its partners is kept under Google’s own policies; we do not control how long. Resetting or deleting the advertising ID (see “Ads and your choices”) cuts the link to your earlier ad data.</li>
 <li>The purchase record and subscription status held by RevenueCat are kept under RevenueCat’s policy, as long as needed to run your Premium plan and for legal and accounting reasons. Deleting your account in the app does not remove RevenueCat’s record or Google Play’s purchase records; write to us and we will ask RevenueCat to delete the record linked to your account.</li>
+<li>Feedback is kept for 12 months, or until you delete your account, whichever comes first. Deleting your account also deletes your feedback and the record that limits how often you can send it.</li>
 <li>Data on your phone is removed when you clear the app’s storage or uninstall the app.</li>
 </ul>
 
@@ -141,7 +145,7 @@ th{background:var(--tile)}
 <p>Depending on where you live, you may have the right to see, correct, export and delete your data, to object to how it is used, and to complain to your data-protection authority. In the app you can see and change everything you entered, export your transactions as a CSV or PDF file, and delete your account. For anything else, write to us and we will answer.</p>
 
 <h2>9. Deleting your data</h2>
-<p>In the app: <em>More → Settings → Account → Delete account</em>. You confirm with your password (or Google), and the app then permanently deletes your wallets, transactions, categories, budgets, bills, goals, recurring incomes, plan details and profile, and then your sign-in account. This needs an internet connection so that nothing is left behind. Copies in Google’s own backups are removed on Google’s schedule. Accounts deleted with an older version of the app may have left a small plan record behind; to ask us about it, write to the address in the “Contact” section.</p>
+<p>In the app: <em>More → Settings → Account → Delete account</em>. You confirm with your password (or Google), and the app then permanently deletes your wallets, transactions, categories, budgets, bills, goals, recurring incomes, plan details, feedback you sent and profile, and then your sign-in account. This needs an internet connection so that nothing is left behind. Copies in Google’s own backups are removed on Google’s schedule. Accounts deleted with an older version of the app may have left a small plan record behind; to ask us about it, write to the address in the “Contact” section.</p>
 <p>By email: see <a href="delete-account">how to delete your account</a>.</p>
 
 <h2>10. Security</h2>
