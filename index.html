@@ -4,33 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Expense Pocket</title>
-<meta name="description" content="Privacy policy, terms of use and account deletion for the Expense Pocket app.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Expense Pocket – personal finance app</title>
+<meta name="description" content="Expense Pocket tracks your spending and income in wallets that each hold one currency, with budgets, bills and savings goals. After the first sign-in it works offline. Privacy policy, terms and account deletion.">
 <style>
-:root{--bg:#ffffff;--tile:#f5f7fa;--border:#dde2ea;--text:#14181f;--muted:#566172;--accent:#08748f}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--tile:#1a1e25;--border:#272d37;--text:#e9eef5;--muted:#98a3b3;--accent:#4de1ff}}
+@font-face{font-family:"Outfit";src:url(fonts/Outfit-wght.ttf) format("truetype");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(fonts/IBMPlexMono-Regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(fonts/IBMPlexMono-Medium.ttf) format("truetype");font-weight:500;font-style:normal;font-display:swap}
+:root{--bg:#f2f4f8;--tile:#ffffff;--border:#dde2ea;--text:#14181f;--muted:#566172;--accent:#08748f;--on-accent:#ffffff;--font-text:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;--radius:1.25rem;--radius-sm:.75rem;--tap:3rem;--measure:44rem;--pad:1rem}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--tile:#1a1e25;--border:#272d37;--text:#e9eef5;--muted:#98a3b3;--accent:#4de1ff;--on-accent:#0f1115}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:44rem;margin:0 auto;padding:1.25rem 1rem 3rem}
-h1{font-size:1.75rem;line-height:1.25;margin:1rem 0 .25rem}
-h2{font-size:1.2rem;margin:2rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--border)}
-p,li{margin:.5rem 0}
-ul{padding-left:1.25rem}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 var(--font-text)}
+main{max-width:var(--measure);margin:0 auto;padding:2rem var(--pad) 3rem}
+h1{font-size:2.25rem;line-height:1.15;margin:1rem 0 .5rem}
+h2{font-family:var(--font-mono);font-size:.8125rem;font-weight:500;color:var(--muted);margin:2rem 0 .5rem}
+p{margin:.5rem 0}
 a{color:var(--accent)}
-.meta{color:var(--muted);margin:0 0 1rem}
-.note{background:var(--tile);border:1px solid var(--border);border-radius:1rem;padding:.75rem 1rem}
-nav a{display:inline-block;min-height:2.75rem;line-height:2.75rem;margin-right:1rem}
-a.tile{display:block;min-height:3rem;background:var(--tile);border:1px solid var(--border);border-radius:1.25rem;padding:1rem;margin:.75rem 0;color:var(--text);text-decoration:none}
+.logo{display:block;width:4rem;height:4rem;border-radius:var(--radius-sm);overflow:hidden}
+.lead{font-size:1.125rem;max-width:36rem}
+a.tile{display:block;min-height:var(--tap);background:var(--tile);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin:.75rem 0;color:var(--text);text-decoration:none}
 a.tile strong{display:block;color:var(--accent)}
+a.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+a.primary strong{color:var(--on-accent)}
+.contact a{display:inline-block;min-height:var(--tap);line-height:var(--tap)}
 </style>
 </head>
 <body>
 <main>
+<svg class="logo" viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="512" height="512" fill="#0F1115"/><rect x="136" y="104" width="240" height="120" rx="32" fill="#FFB84D"/><rect x="88" y="152" width="336" height="256" rx="56" fill="#4DE1FF"/><rect x="296" y="236" width="168" height="92" rx="46" fill="#0F1115"/><circle cx="342" cy="282" r="16" fill="#4DE1FF"/></svg>
 <h1>Expense Pocket</h1>
-<p class="meta">A personal finance app for Android.</p>
+<p class="lead">A personal finance app. Track what you spend and earn in wallets that each hold one currency, set budgets, follow your bills and save towards goals. After your first sign-in it works offline. It does not connect to your bank and never converts one currency into another.</p>
+<a class="tile primary" href="https://play.google.com/store/apps/details?id=com.hovigtaslakian.budget"><strong>Expense Pocket on Google Play</strong>Download the app.</a>
+
+<h2>Policies and your data</h2>
 <a class="tile" href="privacy"><strong>Privacy Policy</strong>What data the app handles and why.</a>
 <a class="tile" href="terms"><strong>Terms of use</strong>The terms for using the app, including Premium and Lifetime.</a>
 <a class="tile" href="delete-account"><strong>Delete your account</strong>How to delete your account and data.</a>
+
+<h2>Contact</h2>
+<p class="contact"><a href="mailto:expensepocket.support@gmail.com">expensepocket.support@gmail.com</a></p>
 </main>
 </body>
 </html>
